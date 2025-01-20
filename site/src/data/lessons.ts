@@ -254,7 +254,7 @@ export const lessons: Lesson[] = [
             {
                 id: 1,
                 title: "The Meaning of و",
-                content: "و is used to connect two nouns or pronouns. It is equivalent to 'and' in English. و is written close to the next word without a gap.",
+                content: "و is used to connect two nouns or pronouns. It has many meaning its most common meaning is 'and' in English. و is written close to the next word without a gap.",
                 example: "جَاءَ سَعِيْدٌ وَفَارُوْقٌ \n - Saeed and Farooq came"
             },
         ],
