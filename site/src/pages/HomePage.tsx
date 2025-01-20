@@ -1,6 +1,6 @@
-﻿import { FC } from 'react';
-import Card from '../components/Card';
-import { lessons } from "../data/lessons";
+﻿import {FC} from 'react';
+import Card from '../components/home/Card';
+import {lessons} from "../data/lessons";
 
 const HomePage: FC = () => {
     return (
