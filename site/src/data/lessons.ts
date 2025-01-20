@@ -238,5 +238,55 @@ export const lessons: Lesson[] = [
                 example: "هذا كِتَابٌ مُفِيدٌ - This is a useful book."
             }
         ]
+    },
+    {
+        id: 2,
+        title: "Lesson 2",
+        description: "This lesson introduces the basics of 'ذَلِكَ'.",
+        infoText: "Learn about demonstrative pronouns in Arabic.",
+        to: "/lesson-2",
+        mainLesson: {
+            title: "Understanding ذَلِكَ (That)",
+            content: "ذَلِكَ is a demonstrative pronoun used to refer to masculine singular objects that are away from the speaker. It is equivalent to 'that' in English when referring to masculine objects. It is called اِسْمُ الْإِشَارَة, and the thing it refers to is called اَلْمُشَارُ إلَيْه.",
+            example: "ذَلِكَ مَسْجِدٌُ\n - That is a Mosque"
+        },
+        subLessons: [
+            {
+                id: 1,
+                title: "The Meaning of و",
+                content: "و is used to connect two nouns or pronouns. It is equivalent to 'and' in English. و is written close to the next word without a gap.",
+                example: "جَاءَ سَعِيْدٌ وَفَارُوْقٌ \n - Saeed and Farooq came"
+            },
+        ],
+        vocabulary: [
+            {
+                id: 1,
+                word: "لَبَنٌ",
+                pronunciation: "laban",
+                meaning: "Milk",
+                example: "هذا لَبَنٌ طَازِجٌ - This is fresh milk."
+            },
+            {
+                id: 2,
+                word: "سُكَّرٌ",
+                pronunciation: "sukkar",
+                meaning: "Sugar",
+                example: "هذا سُكَّرٌ حُلْوٌ - This is sweet sugar."
+            },
+            {
+                id: 3,
+                word: "إمَامٌ",
+                pronunciation: "imām",
+                meaning: "Imam",
+                example: "هذا إمَامٌ صَالِحٌ - This is a righteous imam."
+            },
+            {
+                id: 4,
+                word: "حَجَرٌ",
+                pronunciation: "ḥajar",
+                meaning: "Stone",
+                example: "هذا حَجَرٌ كَبِيرٌ - This is a big stone."
+            }
+        ]
     }
 ];
