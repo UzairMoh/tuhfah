@@ -43,5 +43,3 @@ export const MainLessonSection = ({lesson}: MainLessonSectionProps) => (
         </div>
     </div>
 );
-
-export default MainLessonSection;

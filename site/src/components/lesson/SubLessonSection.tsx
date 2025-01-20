@@ -43,5 +43,3 @@ export const SubLessonSection = ({subLessons}: SubLessonSectionProps) => (
         </div>
     </div>
 );
-
-export default SubLessonSection;
