@@ -46,7 +46,7 @@ const InfoModal: React.FC<{
     </div>
 );
 
-export const Card: React.FC<InfoCardProps> = ({
+const Card: React.FC<InfoCardProps> = ({
                                            id,
                                            title,
                                            description,
@@ -154,3 +154,5 @@ export const Card: React.FC<InfoCardProps> = ({
         </>
     );
 };
+
+export default Card;
