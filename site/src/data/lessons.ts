@@ -1,7 +1,13 @@
-﻿export interface SubLesson {
+﻿export enum SubLessonType {
+    DEFAULT = 'DEFAULT',
+    TABLE = 'TABLE'
+}
+
+export interface SubLesson {
     id: number;
     title: string;
     content: string;
+    type?: SubLessonType;
     example?: string;
 }
 
@@ -24,7 +30,6 @@ export interface Lesson {
     title: string;
     description: string;
     infoText: string;
-    to: string;
     mainLesson: MainLesson;
     subLessons: SubLesson[];
     vocabulary: Vocabulary[];
@@ -36,7 +41,6 @@ export const lessons: Lesson[] = [
         title: "Lesson 1",
         description: "To understand the basics of 'هذا'.",
         infoText: "Learn about demonstrative pronouns in Arabic.",
-        to: "/lesson-1",
         mainLesson: {
             title: "Understanding هذا (This)",
             content: "هذا is a demonstrative pronoun used to refer to masculine singular objects that are near the speaker. It is equivalent to 'this' in English when referring to masculine objects. It is called اِسْمُ الْإِشَارَة, and the thing it refers to is called اَلْمُشَارُ إلَيْه.",
@@ -244,7 +248,6 @@ export const lessons: Lesson[] = [
         title: "Lesson 2",
         description: "To understand the basics of 'ذَلِكَ'.",
         infoText: "Learn about demonstrative pronouns in Arabic.",
-        to: "/lesson-2",
         mainLesson: {
             title: "Understanding ذَلِكَ (That)",
             content: "ذَلِكَ is a demonstrative pronoun used to refer to masculine singular objects that are away from the speaker. It is equivalent to 'that' in English when referring to masculine objects. It is called اِسْمُ الْإِشَارَة, and the thing it refers to is called اَلْمُشَارُ إلَيْه.",
@@ -286,6 +289,35 @@ export const lessons: Lesson[] = [
                 pronunciation: "ḥajar",
                 meaning: "Stone",
                 example: "هذا حَجَرٌ كَبِيرٌ - This is a big stone."
+            }
+        ]
+    },
+    {
+        id: 3,
+        title: "Lesson 3",
+        description: "To understand the basics of 'ال'.",
+        infoText: "Learn about making common nouns specific in Arabic.",
+        mainLesson: {
+            title: "Understanding ال (The)",
+            content: "In Arabic, 'ال' is added to common nouns to make them specific, similar to 'the' in English. 'ال' has various meanings, but its primary purpose here is to specify nouns. The Hamzah (ء) in 'ال' is only pronounced if it is the first word in a sentence. However, when preceded by another word, the Hamzah is silent. To indicate this, the symbol ٱ (Hamzah tul-Wasl) is placed on top of the Hamzah.",
+            example: "المسجد\n - The mosque"
+        },
+        subLessons: [
+            {
+                id: 1,
+                title: "Solar and Lunar Letters",
+                type: SubLessonType.TABLE,
+                content: "The Arabic alphabet is divided into two categories: solar letters and lunar letters. When 'ال' precedes a solar letter, the 'ل' is not pronounced, and the sound merges with the solar letter. When 'ال' precedes a lunar letter, the 'ل' is pronounced. This distinction affects pronunciation but not spelling.",
+                example: "ت، ث، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ل، ن\nا، ب، ج، ح، خ، ع، غ، ف، ق، ك، م، هـ، و، ي"
+            }
+        ],
+        vocabulary: [
+            {
+                id: 1,
+                word: "لَبَنٌ",
+                pronunciation: "laban",
+                meaning: "Milk",
+                example: "هذا لَبَنٌ طَازِجٌ - This is fresh milk."
             }
         ]
     }
