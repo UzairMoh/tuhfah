@@ -13,8 +13,8 @@ export const Loading = ({
         <div className="max-w-md w-full">
             <div className="flex flex-col items-center text-center space-y-6">
                 <div className="relative">
-                    <div className="rounded-full bg-blue-50 p-6">
-                        <Loader2 className="h-12 w-12 text-blue-500 animate-spin"/>
+                    <div className="rounded-full bg-indigo-50 p-6">
+                        <Loader2 className="h-12 w-12 text-indigo-600 animate-spin"/>
                     </div>
                 </div>
                 <div className="space-y-3">
@@ -29,5 +29,3 @@ export const Loading = ({
         </div>
     </div>
 );
-
-export default Loading;

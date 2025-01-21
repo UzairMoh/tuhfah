@@ -10,12 +10,7 @@ const Navbar = () => {
             name: 'Home',
             path: '/',
             disabled: false
-        },
-        {
-            name: 'Practice',
-            path: '/practice',
-            disabled: true
-        },
+        }
     ];
 
     class NavLink extends Component<{ item: any }> {

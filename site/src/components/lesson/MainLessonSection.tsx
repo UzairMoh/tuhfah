@@ -10,7 +10,7 @@ export const MainLessonSection = ({lesson}: MainLessonSectionProps) => (
         <div
             className="bg-white rounded-lg border border-gray-200 shadow-md p-4 md:p-6 transition-all duration-200 hover:bg-gray-50">
             <h1 className="text-2xl font-bold text-gray-900 mb-4 pb-3 border-b">
-                {formatText(lesson.title)}
+                Outcome
             </h1>
             <p className="text-gray-600 text-lg leading-relaxed">
                 {formatText(lesson.description)}

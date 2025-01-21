@@ -34,7 +34,7 @@ export const lessons: Lesson[] = [
     {
         id: 1,
         title: "Lesson 1",
-        description: "This lesson introduces the basics of 'هذا'.",
+        description: "To understand the basics of 'هذا'.",
         infoText: "Learn about demonstrative pronouns in Arabic.",
         to: "/lesson-1",
         mainLesson: {
@@ -242,7 +242,7 @@ export const lessons: Lesson[] = [
     {
         id: 2,
         title: "Lesson 2",
-        description: "This lesson introduces the basics of 'ذَلِكَ'.",
+        description: "To understand the basics of 'ذَلِكَ'.",
         infoText: "Learn about demonstrative pronouns in Arabic.",
         to: "/lesson-2",
         mainLesson: {
