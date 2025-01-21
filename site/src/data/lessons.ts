@@ -314,10 +314,311 @@ export const lessons: Lesson[] = [
         vocabulary: [
             {
                 id: 1,
-                word: "لَبَنٌ",
-                pronunciation: "laban",
-                meaning: "Milk",
-                example: "هذا لَبَنٌ طَازِجٌ - This is fresh milk."
+                word: "فَقِيْرٌ",
+                pronunciation: "faqīr",
+                meaning: "Bankrupt",
+                example: "الرَّجُلُ فَقِيْرٌ - The man is bankrupt"
+            },
+            {
+                id: 2,
+                word: "غَنِيٌّ",
+                pronunciation: "ghaniyy",
+                meaning: "Rich",
+                example: "هُوَ رَجُلٌ غَنِيٌّ - He is a rich man"
+            },
+            {
+                id: 3,
+                word: "قَصِيْرٌ",
+                pronunciation: "qaṣīr",
+                meaning: "Short",
+                example: "الطَّرِيْقُ قَصِيْرٌ - The road is short"
+            },
+            {
+                id: 4,
+                word: "طَوِيْلٌ",
+                pronunciation: "ṭawīl",
+                meaning: "Tall",
+                example: "البُرْجُ طَوِيْلٌ - The tower is tall"
+            },
+            {
+                id: 5,
+                word: "حَارٌ",
+                pronunciation: "ḥārr",
+                meaning: "Hot",
+                example: "الطَّعَامُ حَارٌ - The food is hot"
+            },
+            {
+                id: 6,
+                word: "بَارِدٌ",
+                pronunciation: "bārid",
+                meaning: "Cold",
+                example: "المَاءُ بَارِدٌ - The water is cold"
+            },
+            {
+                id: 7,
+                word: "وَاقِفٌ",
+                pronunciation: "wāqif",
+                meaning: "Standing",
+                example: "الرَّجُلُ وَاقِفٌ - The man is standing"
+            },
+            {
+                id: 8,
+                word: "جَالِسٌ",
+                pronunciation: "jālis",
+                meaning: "Sitting",
+                example: "الطَّالِبُ جَالِسٌ - The student is sitting"
+            },
+            {
+                id: 9,
+                word: "قَدِيْمٌ",
+                pronunciation: "qadīm",
+                meaning: "Old",
+                example: "البَيْتُ قَدِيْمٌ - The house is old"
+            },
+            {
+                id: 10,
+                word: "جَدِيْدٌ",
+                pronunciation: "jadīd",
+                meaning: "New",
+                example: "الكِتَابُ جَدِيْدٌ - The book is new"
+            },
+            {
+                id: 11,
+                word: "بَعِيْدٌ",
+                pronunciation: "baʿīd",
+                meaning: "Far",
+                example: "المَسْجِدُ بَعِيْدٌ - The mosque is far"
+            },
+            {
+                id: 12,
+                word: "قَرِيْبٌ",
+                pronunciation: "qarīb",
+                meaning: "Near",
+                example: "السُّوْقُ قَرِيْبٌ - The market is near"
+            },
+            {
+                id: 13,
+                word: "وَسِخٌ",
+                pronunciation: "wasikh",
+                meaning: "Dirty",
+                example: "الثَّوْبُ وَسِخٌ - The clothes are dirty"
+            },
+            {
+                id: 14,
+                word: "نَظِيْفٌ",
+                pronunciation: "naẓīf",
+                meaning: "Clean",
+                example: "البَيْتُ نَظِيْفٌ - The house is clean"
+            },
+            {
+                id: 15,
+                word: "كَبِيْرٌ",
+                pronunciation: "kabīr",
+                meaning: "Big",
+                example: "المَسْجِدُ كَبِيْرٌ - The mosque is big"
+            },
+            {
+                id: 16,
+                word: "صَغِيْرٌ",
+                pronunciation: "ṣaghīr",
+                meaning: "Small",
+                example: "البَيْتُ صَغِيْرٌ - The house is small"
+            },
+            {
+                id: 17,
+                word: "ثَقِيْلٌ",
+                pronunciation: "thaqīl",
+                meaning: "Heavy",
+                example: "الحَقِيْبَةُ ثَقِيْلَةٌ - The bag is heavy"
+            },
+            {
+                id: 18,
+                word: "خَفِيْفٌ",
+                pronunciation: "khafīf",
+                meaning: "Light",
+                example: "الكِتَابُ خَفِيْفٌ - The book is light"
+            },
+            {
+                id: 19,
+                word: "مَاءٌ",
+                pronunciation: "māʾ",
+                meaning: "Water",
+                example: "المَاءُ بَارِدٌ - The water is cold"
+            },
+            {
+                id: 20,
+                word: "وَرَقٌ",
+                pronunciation: "waraq",
+                meaning: "Paper",
+                example: "الوَرَقُ أَبْيَضُ - The paper is white"
+            },
+            {
+                id: 21,
+                word: "جَمِيْلٌ",
+                pronunciation: "jamīl",
+                meaning: "Beautiful",
+                example: "البَيْتُ جَمِيْلٌ - The house is beautiful"
+            },
+            {
+                id: 22,
+                word: "تُفَّاحٌ",
+                pronunciation: "tuffāḥ",
+                meaning: "Apple",
+                example: "التُّفَّاحُ أَحْمَرُ - The apple is red"
+            },
+            {
+                id: 23,
+                word: "حُلْوٌ",
+                pronunciation: "ḥulw",
+                meaning: "Sweet",
+                example: "العَسَلُ حُلْوٌ - The honey is sweet"
+            },
+            {
+                id: 24,
+                word: "دُكَّانٌ",
+                pronunciation: "dukkān",
+                meaning: "Shop",
+                example: "الدُّكَّانُ مَفْتُوْحٌ - The shop is open"
+            },
+            {
+                id: 25,
+                word: "قَمَرٌ",
+                pronunciation: "qamar",
+                meaning: "Moon",
+                example: "القَمَرُ مُنِيْرٌ - The moon is bright"
+            },
+            {
+                id: 26,
+                word: "مَرِيْضٌ",
+                pronunciation: "marīḍ",
+                meaning: "Sick",
+                example: "الوَلَدُ مَرِيْضٌ - The boy is sick"
+            },
+            {
+                id: 27,
+                word: "مَكْسُوْرٌ",
+                pronunciation: "maksūr",
+                meaning: "Broken",
+                example: "البَابُ مَكْسُوْرٌ - The door is broken"
+            },
+            {
+                id: 28,
+                word: "مَفْتُوْحٌ",
+                pronunciation: "maftūḥ",
+                meaning: "Open",
+                example: "النَّافِذَةُ مَفْتُوْحَةٌ - The window is open"
+            },
+            {
+                id: 29,
+                word: "جَنَّةٌ",
+                pronunciation: "jannah",
+                meaning: "Garden",
+                example: "الجَنَّةُ جَمِيْلَةٌ - The garden is beautiful"
+            },
+            {
+                id: 30,
+                word: "هَوَاءٌ",
+                pronunciation: "hawāʾ",
+                meaning: "Air",
+                example: "الهَوَاءُ نَظِيْفٌ - The air is clean"
+            },
+            {
+                id: 31,
+                word: "خُبْزٌ",
+                pronunciation: "khubz",
+                meaning: "Bread",
+                example: "الخُبْزُ طَازِجٌ - The bread is fresh"
+            },
+            {
+                id: 32,
+                word: "يَدٌ",
+                pronunciation: "yad",
+                meaning: "Hand",
+                example: "اليَدُ نَظِيْفَةٌ - The hand is clean"
+            },
+            {
+                id: 33,
+                word: "عَيْنٌ",
+                pronunciation: "ʿayn",
+                meaning: "Eye",
+                example: "العَيْنُ جَمِيْلَةٌ - The eye is beautiful"
+            },
+            {
+                id: 34,
+                word: "تَاجِرٌ",
+                pronunciation: "tājir",
+                meaning: "Businessman",
+                example: "التَّاجِرُ غَنِيٌّ - The businessman is rich"
+            },
+            {
+                id: 35,
+                word: "غَدَاءٌ",
+                pronunciation: "ghadāʾ",
+                meaning: "Lunch",
+                example: "الغَدَاءُ جَاهِزٌ - The lunch is ready"
+            },
+            {
+                id: 36,
+                word: "ثَوْبٌ",
+                pronunciation: "thawb",
+                meaning: "Cloth",
+                example: "الثَّوْبُ جَدِيْدٌ - The cloth is new"
+            },
+            {
+                id: 37,
+                word: "فَمٌ",
+                pronunciation: "fam",
+                meaning: "Mouth",
+                example: "الفَمُ كَبِيْرٌ - The mouth is big"
+            },
+            {
+                id: 38,
+                word: "ذَهَبٌ",
+                pronunciation: "dhahab",
+                meaning: "Gold",
+                example: "الذَّهَبُ غَالٍ - The gold is expensive"
+            },
+            {
+                id: 39,
+                word: "زَهْرَةٌ",
+                pronunciation: "zahrah",
+                meaning: "Flower",
+                example: "الزَّهْرَةُ جَمِيْلَةٌ - The flower is beautiful"
+            },
+            {
+                id: 40,
+                word: "صَدْرٌ",
+                pronunciation: "ṣadr",
+                meaning: "Chest",
+                example: "الصَّدْرُ قَوِيٌّ - The chest is strong"
+            },
+            {
+                id: 41,
+                word: "سَمَكٌ",
+                pronunciation: "samak",
+                meaning: "Fish",
+                example: "السَّمَكُ طَازِجٌ - The fish is fresh"
+            },
+            {
+                id: 42,
+                word: "ضَيْفٌ",
+                pronunciation: "ḍayf",
+                meaning: "Guest",
+                example: "الضَّيْفُ كَرِيْمٌ - The guest is generous"
+            },
+            {
+                id: 43,
+                word: "ظَهْرٌ",
+                pronunciation: "ẓahr",
+                meaning: "Back",
+                example: "الظَّهْرُ قَوِيٌّ - The back is strong"
+            },
+            {
+                id: 44,
+                word: "لَحْمٌ",
+                pronunciation: "laḥm",
+                meaning: "Meat",
+                example: "اللَّحْمُ طَازِجٌ - The meat is fresh"
             }
         ]
     }
