@@ -80,13 +80,17 @@ const SarfGame: React.FC<SarfGameProps> = (props) => {
         }
     };
 
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        updateCurrentAnswer({ input: e.target.value });
+
+        if (isCorrect !== null) {
+            updateCurrentAnswer({ isCorrect: null, showAnswer: false });
+        }
+    };
+
     const handleInputFocus = () => {
         if (inputRef.current) {
-            inputRef.current.blur();
-
-            if (!showKeyboard) {
-                setShowKeyboard(true);
-            }
+            inputRef.current.focus();
         }
     };
 
@@ -126,7 +130,6 @@ const SarfGame: React.FC<SarfGameProps> = (props) => {
         updateCurrentAnswer({ showAnswer: value });
     };
 
-    // Animation variants
     const variants = {
         enter: (direction: number) => ({
             y: direction > 0 ? 30 : -30,
@@ -217,19 +220,21 @@ const SarfGame: React.FC<SarfGameProps> = (props) => {
 
                                         <div className="w-full flex flex-col items-center mt-4 sm:mt-8 space-y-3 sm:space-y-4">
                                             <div className="flex items-center">
-                                                <div
-                                                    className={`w-36 sm:w-48 p-2 sm:p-3 text-lg sm:text-2xl text-center border-2 rounded-md cursor-pointer ${
+                                                <input
+                                                    ref={inputRef}
+                                                    type="text"
+                                                    value={userInput}
+                                                    onChange={handleInputChange}
+                                                    onClick={handleInputFocus}
+                                                    className={`w-36 sm:w-48 p-2 sm:p-3 text-lg sm:text-2xl text-center border-2 rounded-md ${
                                                         isCorrect === true
                                                             ? 'border-green-500 bg-green-50'
                                                             : isCorrect === false
                                                                 ? 'border-red-500 bg-red-50'
                                                                 : 'border-gray-300 hover:border-blue-400'
-                                                    } transition-colors duration-150 min-h-[48px] sm:min-h-[56px]`}
-                                                    onClick={handleInputFocus}
+                                                    } transition-colors duration-150 min-h-[48px] sm:min-h-[56px] font-arabic`}
                                                     dir="rtl"
-                                                >
-                                                    <span className="font-arabic">{userInput || ''}</span>
-                                                </div>
+                                                />
                                             </div>
 
                                             <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
