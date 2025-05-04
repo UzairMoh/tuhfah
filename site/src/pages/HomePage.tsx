@@ -1,10 +1,7 @@
-﻿import React, { useState } from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
-import { Info } from 'lucide-react';
 
 const HomePage: React.FC = () => {
-    const [showTooltip, setShowTooltip] = useState(false);
-
     return (
         <div className="flex items-center justify-center" style={{ minHeight: 'calc(100vh - 160px)' }}>
             <div className="flex flex-col items-center justify-center p-4 w-full">
@@ -18,10 +15,6 @@ const HomePage: React.FC = () => {
                 <div className="w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 px-2 sm:px-4">
                     <Link to="/duroos" className="w-full">
                         <div className="group relative p-4 sm:p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 cursor-pointer bg-white h-full">
-                            <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
-                                <Info className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 group-hover:text-gray-600 transition-colors duration-200"/>
-                            </div>
-
                             <div className="pr-6 sm:pr-8">
                                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">
                                     Study Duroos
@@ -33,8 +26,8 @@ const HomePage: React.FC = () => {
                         </div>
                     </Link>
 
-                    <div className="w-full relative">
-                        <div className="group relative p-4 sm:p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 cursor-not-allowed bg-white h-full blur-[1px] opacity-80">
+                    <Link to="/sarf" className="w-full">
+                        <div className="group relative p-4 sm:p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 cursor-pointer bg-white h-full">
                             <div className="pr-6 sm:pr-8">
                                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">
                                     Study Sarf
@@ -44,20 +37,7 @@ const HomePage: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-                        <div
-                            className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10"
-                            onMouseEnter={() => setShowTooltip(true)}
-                            onMouseLeave={() => setShowTooltip(false)}
-                        >
-                            <Info className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 hover:text-gray-600 transition-colors duration-200"/>
-
-                            {showTooltip && (
-                                <div className="absolute right-0 mt-1 bg-black text-white shadow-md rounded-md p-2 w-24 text-xs text-center">
-                                    Coming Soon
-                                </div>
-                            )}
-                        </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
