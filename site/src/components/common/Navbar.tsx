@@ -19,7 +19,7 @@ const Navbar = () => {
             if (item.disabled) {
                 return (
                     <div className="relative group">
-                    <span className="text-gray-400 cursor-not-allowed px-3 py-2 rounded-md text-sm font-medium">
+                    <span className="text-gray-400 cursor-not-allowed px-3 py-2 rounded-md text-lg font-medium">
                         {item.name}
                     </span>
                         <div
@@ -35,7 +35,7 @@ const Navbar = () => {
             return (
                 <Link
                     to={item.path}
-                    className="text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                    className="text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-200"
                 >
                     {item.name}
                 </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="bg-white shadow-lg sticky top-0 z-50">
+        <nav className="bg-white sticky top-0 z-50 shadow-sm">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
