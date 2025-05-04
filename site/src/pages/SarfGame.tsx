@@ -152,7 +152,7 @@ const SarfGame: React.FC<SarfGameProps> = (props) => {
                     Sarf Practice - <span className="font-arabic">{gameTitle}</span>
                 </h1>
 
-                {gameComplete ? (
+                {!gameComplete ? (
                     <div className="w-full mx-auto">
                         <div className="flex justify-between items-center mb-3 sm:mb-6">
                             <button
