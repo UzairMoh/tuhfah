@@ -38,6 +38,19 @@ const HomePage: React.FC = () => {
                             </div>
                         </div>
                     </Link>
+
+                    <Link to="/qisas" className="w-full">
+                        <div className="group relative p-4 sm:p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 cursor-pointer bg-white h-full">
+                            <div className="pr-6 sm:pr-8">
+                                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">
+                                    Study Qisas
+                                </h3>
+                                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                                    Learn from the inspiring stories and lessons of the prophets
+                                </p>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
