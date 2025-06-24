@@ -1,6 +1,6 @@
 ﻿import React, { FC, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Info, BookOpen, Zap, ScrollText } from 'lucide-react';
+import { Info, BookOpen, ScrollText } from 'lucide-react';
 import { prophetStories } from "../data/qisas";
 
 const Tooltip: React.FC<{ content: string }> = ({ content }) => (
@@ -104,15 +104,6 @@ const QisasHomePage: FC = () => {
                     structured with word-by-word translations to help you understand classical Arabic.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mt-3 sm:mt-4">
-                    <div className="bg-white p-3 sm:p-4 rounded-lg">
-                        <h3 className="font-semibold text-gray-800 mb-2 flex items-center text-sm sm:text-base">
-                            <Zap className="h-4 w-4 mr-2 text-blue-600" />
-                            Interactive Learning
-                        </h3>
-                        <p className="text-xs sm:text-sm text-gray-600">
-                            Click on any Arabic word to see its direct translation and understand sentence structure.
-                        </p>
-                    </div>
                     <div className="bg-white p-3 sm:p-4 rounded-lg">
                         <h3 className="font-semibold text-gray-800 mb-2 flex items-center text-sm sm:text-base">
                             <ScrollText className="h-4 w-4 mr-2 text-blue-600" />
